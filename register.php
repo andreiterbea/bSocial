@@ -6,6 +6,6 @@
 </head>
 
 <body>
-Test
+Register
 </body>
 </html>
