@@ -7,13 +7,11 @@
 </head>
 
 <body>
+
 <wrapper>
 
 <header> 
-
 <div id="logo"><a href="index.html"><img src="billeder/logo.png" style="height: 140px; margin: 15px;" alt="logo"></a></div>
-
-
 </header>
 
 <div id="content">
