@@ -1,11 +1,36 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Front page</title>
+<meta charset="UTF-8">
+<title>Front Page</title>
+<link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-Test er ikke sjovt
+<wrapper>
+
+<header> 
+
+<div id="logo"><a href="index.html"><img src="billeder/logo.png" style="height: 140px; margin: 15px;" alt="logo"></a></div>
+
+
+</header>
+
+<div id="content">
+
+
+
+
+
+
+
+</div>
+
+
+<footer>
+<p> Bsocial - bsocial@now.com - call us: +45 42 16 16 44 </p>           
+</footer>
+
+</wrapper>
 </body>
 </html>
