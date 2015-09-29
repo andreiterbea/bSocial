@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color: #f0f6fa
+}
+
+header {
+	height: 100px;	
+	background-color: #3371b8;
+	margin: -20px;
+}
+
+#logo {
+	height: 150px;
+	margin: 20px;
+	
+}
+
+
+#content {
+	height: 600px;
+	width: 900px;	
+	color: #fff;
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+	height: 40px;
+	background-color: #3371B8;
+	margin: -8px -8px -18px;
+	color: #fff;
+	padding: 10px 0px 12px 40px;
+}
