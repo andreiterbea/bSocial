@@ -9,9 +9,9 @@
 <body>
 <wrapper>
 
-<header> 
-<div id="logo"><a href="index.html"><img src="billeder/logo.png" style="height: 140px; margin: 15px;" alt="logo"></a></div>
-</header>
+
+<!-- Below is some PHP code that pulls the menu from another file (menu.php) and puts it on this page. This way it's easy to make changes and update every page at once -->
+<?php include 'include/menu.php';?>
 
 <div id="content">
 
