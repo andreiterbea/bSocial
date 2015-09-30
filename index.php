@@ -1,11 +1,40 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html lang="en" class="no-js">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Front page</title>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Front Page</title>
+
+
+<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
 </head>
 
 <body>
-Test
+<wrapper>
+
+<!-- Below is some PHP code that pulls the menu from another file (menu.php) and puts it on this page. This way it's easy to make changes and update every page at once -->
+<?php include 'include/menu.php';?>
+
+
+<div id="content">
+
+
+
+
+
+
+
+</div>
+
+
+<footer>
+<p> Bsocial - bsocial@now.com - call us: +45 42 16 16 44 </p>           
+</footer>
+
+</wrapper>
 </body>
 </html>

@@ -1,0 +1,562 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+    font-family: autoradiographicrg;
+    src: url(../fonts/autoradiographicrg.ttf);
+    font-weight: regular;
+}
+
+body {
+	background-color: #f0f6fa;
+	height: 100%;
+}
+
+/*
+
+OLD HEADER CSS before adding the new menu
+
+header {
+	height: 100px;	
+	background-color: #3371b8;
+	margin: -20px;
+}
+
+*/
+
+#logo {
+	height: 150px;
+	margin:-10px;
+	
+}
+
+
+#content {
+	height: 500px;
+	width: 900px;	
+	color: #fff;
+	
+
+}
+
+a {
+	text-decoration:none;
+}
+.linkstyle a {
+	color:white;
+    font-family: "Source Sans Pro", sans-serif !important;
+}
+/* This is where the complicated changes start */
+
+body.overflow-hidden {
+  /* when primary navigation is visible, the content in the background won't scroll */
+  overflow: hidden;
+}
+
+.menucss {
+  font-size: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+
+menucss a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.cd-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color:#3371b8;
+  height: 100px;
+  width: 100%;
+  z-index: 3;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+footer {
+	height: 40px;
+	background-color: #3371B8;
+	margin: -8px -8px -18px;
+	color: #fff;
+	padding: 10px 0px 12px 40px;
+}
+
+/* UNSORTED NEW CSS */
+
+
+@media only screen and (min-width: 1170px) {
+  .cd-header {
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .cd-header.menu-is-open {
+    /* add a background color to the header when the navigation is open */
+    background-color:#1174d9;
+	height:100px;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .cd-logo {
+    left: 2.6em;
+  }
+}
+
+.cd-secondary-nav {
+  position: absolute;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 10em;
+  /* hidden on small devices */
+  display: none;
+}
+.cd-secondary-nav li {
+  display: inline-block;
+  margin-left: 2.2em;
+}
+.cd-secondary-nav a {
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+@media only screen and (min-width: 768px) {
+  .cd-secondary-nav {
+    display: block;
+  }
+}
+
+.cd-primary-nav-trigger {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 50px;
+  background-color: #1174d9;
+}
+.cd-primary-nav-trigger .cd-menu-text {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  /* hide the text on small devices */
+  display: none;
+}
+.cd-primary-nav-trigger .cd-menu-icon {
+  /* this span is the central line of the menu icon */
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 18px;
+  height: 2px;
+  background-color: white;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  /* these are the upper and lower lines in the menu icon */
+}
+.cd-primary-nav-trigger .cd-menu-icon::before, .cd-primary-nav-trigger .cd-menu-icon:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  right: 0;
+  -webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
+  -moz-transition: -moz-transform .3s, top .3s, background-color 0s;
+  transition: transform .3s, top .3s, background-color 0s;
+}
+.cd-primary-nav-trigger .cd-menu-icon::before {
+  top: -5px;
+}
+.cd-primary-nav-trigger .cd-menu-icon::after {
+  top: 5px;
+}
+.cd-primary-nav-trigger .cd-menu-icon.is-clicked {
+  background-color: rgba(255, 255, 255, 0);
+}
+.cd-primary-nav-trigger .cd-menu-icon.is-clicked::before, .cd-primary-nav-trigger .cd-menu-icon.is-clicked::after {
+  background-color: white;
+}
+.cd-primary-nav-trigger .cd-menu-icon.is-clicked::before {
+  top: 0;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.cd-primary-nav-trigger .cd-menu-icon.is-clicked::after {
+  top: 0;
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+@media only screen and (min-width: 768px) {
+  .cd-primary-nav-trigger {
+    width: 100px;
+    padding-left: 1em;
+    background-color: transparent;
+    height: 30px;
+    line-height: 30px;
+    right: 2.2em;
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .cd-primary-nav-trigger .cd-menu-text {
+    display: inline-block;
+  }
+  .cd-primary-nav-trigger .cd-menu-icon {
+    left: auto;
+    right: 1em;
+    -webkit-transform: translateX(0) translateY(-50%);
+    -moz-transform: translateX(0) translateY(-50%);
+    -ms-transform: translateX(0) translateY(-50%);
+    -o-transform: translateX(0) translateY(-50%);
+    transform: translateX(0) translateY(-50%);
+  }
+}
+
+.cd-primary-nav {
+  /* by default it's hidden - on top of the viewport */
+  position: fixed;
+  left: 0;
+  top: -20px;
+  height: 100%;
+  width: 200px;
+  background: #1463b4;
+  z-index: 2;
+  text-align: left;
+  padding: 50px 0;
+  overflow: auto;
+  /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.cd-primary-nav li {
+  font-size: 22px;
+  font-size: 1.375rem;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: .2em 0;
+  text-transform: capitalize;
+}
+.cd-primary-nav:first-child {
+  margin-top: 100px;
+}
+.cd-primary-nav a {
+  display: inline-block;
+  padding: .4em 1em;
+  border-radius: 0.25em;
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  transition: background 0.2s;
+}
+.no-touch .cd-primary-nav a:hover {
+  background-color: #8dbae7;
+}
+.cd-primary-nav .cd-label {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin: 2.4em 0 .8em;
+}
+.cd-primary-nav .cd-social {
+  display: inline-block;
+  margin: 0 .4em;
+}
+.cd-primary-nav .cd-social a {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background-image: url("../img/cd-socials.svg");
+  background-repeat: no-repeat;
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+.cd-primary-nav .cd-facebook a {
+  background-position: 0 0;
+}
+.cd-primary-nav .cd-instagram a {
+  background-position: -44px 0;
+}
+.cd-primary-nav .cd-dribbble a {
+  background-position: -88px 0;
+}
+.cd-primary-nav .cd-twitter a {
+  background-position: -132px 0;
+}
+.cd-primary-nav.is-visible {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+@media only screen and (min-width: 768px) {
+  .cd-primary-nav {
+    padding: 80px 0;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-primary-nav li {
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+  .cd-primary-nav .cd-label {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+
+.cd-intro {
+  position: relative;
+  height: 100%;
+  background: url("../img/cd-background-img.jpg") no-repeat center center;
+  background-size: cover;
+  z-index: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.cd-intro h1 {
+  position: absolute;
+  width: 90%;
+  max-width: 1170px;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .cd-intro h1 {
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-intro {
+    height: 700px;
+  }
+}
+
+.cd-main-content {
+  position: relative;
+  z-index: 1;
+}
+.cd-main-content p {
+  line-height: 1.6;
+  margin: 2em 0;
+}
+@media only screen and (min-width: 1170px) {
+  .cd-main-content p {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}
+
+
+
+/* Login */
+
+.container {
+  margin: 80px auto;
+  width: 640px;
+}
+
+.login {
+  position: relative;
+	padding: 40px;
+	width: 310px;
+	background: #FFF none repeat scroll 0% 0%;
+	border-radius: 3px;
+	margin: 0px 0px 0px 320px;
+	box-shadow: 10px 10px 10px #CCC;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -8px; right: -8px; bottom: -8px; left: -8px;
+    z-index: -1;
+    background: rgba(black, .08);
+    border-radius: 4px;
+  }
+
+  h1 {
+    margin: -20px -20px 21px;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+    text-shadow: 0 1px white;
+    background: #f3f3f3;
+    border-bottom: 1px solid #cfcfcf;
+    border-radius: 3px 3px 0 0;
+    @include linear-gradient(top, whiteffd, #eef2f5);
+    @include box-shadow(0 1px #f5f5f5);
+  }
+
+  p { margin: 20px 0 0; }
+  p:first-child { margin-top: 0; }
+
+  input[type=text], input[type=password] { width: 278px; }
+
+  p.remember_me {
+    float: left;
+    line-height: 31px;
+
+    label {
+      font-size: 12px;
+      color: #3371b8;
+      cursor: pointer;
+    }
+
+    input {
+      position: relative;
+      bottom: 1px;
+      margin-right: 4px;
+      vertical-align: middle;
+    }
+  }
+
+  p.submit { text-align: right; }
+}
+
+.login-help {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #3371b8;
+  margin-left: 390px;
+
+  a {
+    color: #cce7fa;
+    text-decoration: none;
+
+    &:hover { text-decoration: underline; }
+  }
+}
+
+:-moz-placeholder {
+  color: #c9c9c9 !important;
+  font-size: 13px;
+}
+
+::-webkit-input-placeholder {
+  color: #ccc;
+  font-size: 13px;
+}
+
+input {
+  font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  font-size: 14px;
+  margin-left: 37px;
+}
+
+input[type=text], input[type=password] {
+  margin: 5px;
+  padding: 0 10px;
+  width: 200px;
+  height: 34px;
+  color: #404040;
+  background: white;
+  border: 1px solid;
+  border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+  border-radius: 2px;
+  outline: 5px solid #eff4f7;
+  -moz-outline-radius: 3px;
+  margin-left: 40px;
+
+  &:focus {
+    border-color: #7dc9e2;
+    outline-color: #dceefc;
+    outline-offset: 0; // WebKit sets this to -1 by default
+  }
+}
+
+input[type=submit] {
+  padding: 0 18px;
+  height: 29px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  background: #62c090;
+  border: 1px solid;
+  border-color: #b4ccce #b3c0c8 #9eb9c2;
+  border-radius: 16px;
+  outline: 0;
+
+  &:active {
+    background: #cde5ef;
+    border-color: #9eb9c2 #b3c0c8 #b4ccce;
+  }
+}
+
+.lt-ie9 {
+  input[type=text], input[type=password] { line-height: 34px; }
+}
+
+.not-member {
+	color:black;
+}
