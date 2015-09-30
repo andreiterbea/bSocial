@@ -2,8 +2,8 @@
 /* CSS Document */
 
 @font-face {
-    font-family: auto;
-    src: url(fonts/autoradiographicrg.ttf);
+    font-family: autoradiographicrg;
+    src: url(../fonts/autoradiographicrg.ttf);
     font-weight: regular;
 }
 
@@ -555,4 +555,8 @@ input[type=submit] {
 
 .lt-ie9 {
   input[type=text], input[type=password] { line-height: 34px; }
+}
+
+.not-member {
+	color:black;
 }
