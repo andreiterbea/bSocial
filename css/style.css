@@ -2,8 +2,8 @@
 /* CSS Document */
 
 @font-face {
-    font-family: auto;
-    src: url(fonts/autoradiographicrg.ttf);
+    font-family: autoradiographicrg;
+    src: url(../fonts/autoradiographicrg.ttf);
     font-weight: regular;
 }
 
@@ -431,7 +431,7 @@ footer {
 	width: 310px;
 	background: #FFF none repeat scroll 0% 0%;
 	border-radius: 3px;
-	margin: 0px 0px 0px 320px;
+	margin-top: 150px;
 	box-shadow: 10px 10px 10px #CCC;
 
   &:before {
@@ -555,4 +555,8 @@ input[type=submit] {
 
 .lt-ie9 {
   input[type=text], input[type=password] { line-height: 34px; }
+}
+
+.not-member {
+	color:black;
 }
