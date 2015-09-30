@@ -20,7 +20,7 @@
 			<li><a href="#0">Create event</a></li>
 			<li><a href="#0">Calendar</a></li>
             <li><a href="#0">Settings</a></li>
-			
+			</br>
 			<li class="cd-social cd-facebook"><a href="#0">Facebook</a></li>
 			<li class="cd-social cd-instagram"><a href="#0">Instagram</a></li>
 			<li class="cd-social cd-twitter"><a href="#0">Twitter</a></li>
