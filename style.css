@@ -2,7 +2,7 @@
 /* CSS Document */
 
 @font-face {
-    font-family: auto;
+    font-family: autoradiographicrg;
     src: url(fonts/autoradiographicrg.ttf);
     font-weight: regular;
 }
@@ -37,7 +37,7 @@ header {
 	width: 310px;
 	background: #FFF none repeat scroll 0% 0%;
 	border-radius: 3px;
-	margin: 0px 0px 0px 320px;
+	margin-top:;
 	box-shadow: 10px 10px 10px #CCC;
 
   &:before {
