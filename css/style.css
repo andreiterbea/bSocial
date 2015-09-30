@@ -27,16 +27,28 @@ header {
 #logo {
 	height: 150px;
 	margin:-10px;
+/*	position:fixed;
+	top:0;
+	left:0;*/
+	
 	
 }
 
 
 #content {
-	height: 500px;
+	height: 1200px;
 	width: 900px;	
 	color: #fff;
+  	min-height: 100%;
+ 	 /* equal to footer height */
+ 	 margin-bottom: -40px; 
+}
 	
 
+#content:after {
+  content: "";
+  display: block;
+  height:40px;
 }
 
 a {
@@ -64,9 +76,15 @@ menucss a {
   text-decoration: none;
 }
 
-
+.themenu {
+	position:fixed;
+	top:0;
+	left:0;
+	height:150px;
+	width:100%;
+}
 .cd-header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background-color:#3371b8;
@@ -420,13 +438,12 @@ footer {
 
 /* Login */
 
-.container {
-  margin: 80px auto;
+.login-container {
   width: 640px;
 }
 
 .login {
-  position: relative;
+  position: absolute;
 	padding: 40px;
 	width: 310px;
 	background: #FFF none repeat scroll 0% 0%;
@@ -485,10 +502,10 @@ footer {
 }
 
 .login-help {
-  margin: 20px 0;
+	width:inherit;
+	height:30px;
   font-size: 14px;
   color: #3371b8;
-  margin-left: 390px;
 
   a {
     color: #cce7fa;
@@ -559,4 +576,15 @@ input[type=submit] {
 
 .not-member {
 	color:black;
+}
+
+
+#loginbox {
+	height:600px;
+	width:400px;
+	position:absolute;
+	right:200px;
+	font-family:autoradiographicrg;
+	
+	
 }

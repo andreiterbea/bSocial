@@ -14,7 +14,7 @@
 <?php include 'include/menu.php';?>
 
 <div id="content">
-
+<div id="loginbox">
 
   <section class="container">
     <div class="login">
@@ -25,22 +25,26 @@
         <p class="remember_me">
           <label>
             <input type="checkbox" name="remember_me" id="remember_me">
-            <p style="color:#000;">Remember me on this computer</p>
+            <p style="color:#000;">Remember me </p>
+        
           </label>
         </p>
         <p class="submit" style="margin-left: 75px;"><input type="submit" name="commit" value="Login"></p>
       </form>
+      <div class="login-help">
+      <p> <a href="index.html">Forgot your password?</a>.</p>
+      <div class="not-member" >
+      <p>Not a member? <a href="register.php">Connect with your classmates</a>.</p>
+    </div>
+    </div>
     </div>
 
-    <div class="login-help">
-      <p>Forgot your password? <a href="index.html">Click here to reset it</a>.</p>
-    </div>
     
-    <div class="not-member" style="margin-left:400px;">
-      <p>Not a member? <a href="index.html">Click here to start connecting with your classmates</a>.</p>
-    </div>
+    
+    
   </section>
 
+</div><!--loginbox close-->
 </div> <!-- content close -->
 
 
