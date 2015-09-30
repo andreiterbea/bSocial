@@ -20,12 +20,9 @@
 			<li><a href="#0">Create event</a></li>
 			<li><a href="#0">Calendar</a></li>
             <li><a href="#0">Settings</a></li>
-
-			<li class="cd-label">Follow us</li>
 			
 			<li class="cd-social cd-facebook"><a href="#0">Facebook</a></li>
 			<li class="cd-social cd-instagram"><a href="#0">Instagram</a></li>
-			<li class="cd-social cd-dribbble"><a href="#0">Dribbble</a></li>
 			<li class="cd-social cd-twitter"><a href="#0">Twitter</a></li>
 		</ul>
          </div> <!-- end of linkstyle div -->
