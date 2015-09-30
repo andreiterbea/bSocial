@@ -2,8 +2,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link href="css/style.css" rel="stylesheet">
+
+<?php include 'include/headlinks.php';?> <!-- links to css and js -->
+
 <title>Register at Bsocial</title>
+
 </head>
 
 <body>

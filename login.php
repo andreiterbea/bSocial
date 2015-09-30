@@ -2,7 +2,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link href="css/style.css" rel="stylesheet">
+
+<?php include 'include/headlinks.php';?> <!-- links to css and js -->
+
+
 <title>Login at Bsocial</title>
 </head>
 
@@ -19,7 +22,7 @@
   <section class="container">
     <div class="login">
       <h1 style="font-family: 'autoradiographicrg'; margin-left: 48px; font-size:33px; color:#349364;"> Login to Bsocial</h1>
-      <form method="post" action="index.html">
+      <form class="loginreg" method="post" action="index.html">
         <p><input type="text" name="login" value="" placeholder="Username"></p>
         <p><input type="password" name="password" value="" placeholder="Password"></p>
         <p class="remember_me">
@@ -29,7 +32,7 @@
         
           </label>
         </p>
-        <p class="submit" style="margin-left: 75px;"><input type="submit" name="commit" value="Login"></p>
+        <p class="submit" style="margin-left: 100px;"><input type="submit" name="commit" value="Login"></p>
       </form>
       <div class="login-help">
       <p> <a href="index.html">Forgot your password?</a>.</p>
@@ -42,7 +45,6 @@
     
     
     
-  </section>
 
 </div><!--loginbox close-->
 </div> <!-- content close -->

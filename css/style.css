@@ -482,7 +482,7 @@ footer {
 
   p.remember_me {
     float: left;
-    line-height: 31px;
+    line-height: 31px; 
 
     label {
       font-size: 12px;
@@ -543,7 +543,7 @@ input[type=text], input[type=password] {
   border-radius: 2px;
   outline: 5px solid #eff4f7;
   -moz-outline-radius: 3px;
-  margin-left: 40px;
+  margin-left: 20px;
 
   &:focus {
     border-color: #7dc9e2;
@@ -587,4 +587,8 @@ input[type=submit] {
 	font-family:autoradiographicrg;
 	
 	
+}
+
+.loginreg {
+	margin=40px;
 }
