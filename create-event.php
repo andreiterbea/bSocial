@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 
 <?php include 'include/headlinks.php';?> <!-- links to css and js -->
-
+<link rel="stylesheet" href="css/eventstyle.css"> 
 <title>Create an event</title>
 
 </head>
