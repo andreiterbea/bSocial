@@ -2,7 +2,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link href="css/style.css" rel="stylesheet">
+
+<?php include 'include/headlinks.php';?> <!-- links to css and js -->
+<link rel="stylesheet" href="css/loginstyle.css"> 
+
 <title>Login at Bsocial</title>
 </head>
 
@@ -11,42 +14,48 @@
 
 
 <!-- Below is some PHP code that pulls the menu from another file (menu.php) and puts it on this page. This way it's easy to make changes and update every page at once -->
-<?php include 'include/menu.php';?>
+<?php include 'include/menunodrop.php';?>
+
+
 
 <div id="content">
 
+    <div class="logintext">
+	<h1 style="color:white;">Bsocial. </br>Bringing EAL students together inside and outside school!</h1>
+</div> <!-- end of logintext div -->
+
+<div id="loginbox">
 
   <section class="container">
     <div class="login">
       <h1 style="font-family: 'autoradiographicrg'; margin-left: 48px; font-size:33px; color:#349364;"> Login to Bsocial</h1>
-      <form method="post" action="index.html">
+      <form class="loginreg" method="post" action="index.html">
         <p><input type="text" name="login" value="" placeholder="Username"></p>
         <p><input type="password" name="password" value="" placeholder="Password"></p>
         <p class="remember_me">
           <label>
             <input type="checkbox" name="remember_me" id="remember_me">
-            <p style="color:#000;">Remember me on this computer</p>
+            <p style="color:#000;">Remember me </p>
+        
           </label>
         </p>
-        <p class="submit" style="margin-left: 75px;"><input type="submit" name="commit" value="Login"></p>
+        <p class="submit" style="margin-left: 100px;"><input type="submit" name="commit" value="Login"></p>
       </form>
+      <div class="login-help">
+      <p> <a href="index.html">Forgot your password?</a>.</p>
+      <div class="not-member" >
+      <p>Not a member? <a href="register.php">Connect with your classmates</a>.</p>
+    </div>
+    </div>
     </div>
 
-    <div class="login-help">
-      <p>Forgot your password? <a href="index.html">Click here to reset it</a>.</p>
-    </div>
-    
-    <div class="not-member" style="margin-left:400px;">
-      <p>Not a member? <a href="index.html">Click here to start connecting with your classmates</a>.</p>
-    </div>
-  </section>
+
+</div><!--loginbox close-->
 
 </div> <!-- content close -->
 
 
-<footer>
-<p> Bsocial - bsocial@now.com - call us: +45 42 16 16 44 </p>           
-</footer>
+<?php include 'include/footer.php';?>
 
 </wrapper>
 </body>

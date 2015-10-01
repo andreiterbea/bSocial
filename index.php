@@ -3,13 +3,9 @@
 <head>
 <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+<?php include 'include/headlinks.php';?> <!-- links to css and js -->
 <title>Front Page</title>
 
-
-<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-<script src="js/modernizr.js"></script> <!-- Modernizr -->
 
 </head>
 
@@ -31,9 +27,7 @@
 </div>
 
 
-<footer>
-<p> Bsocial - bsocial@now.com - call us: +45 42 16 16 44 </p>           
-</footer>
+<?php include 'include/footer.php';?>
 
 </wrapper>
 </body>
