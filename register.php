@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 
 <?php include 'include/headlinks.php';?> <!-- links to css and js -->
-
+<link rel="stylesheet" href="css/loginstyle.css"> 
 <title>Register at Bsocial</title>
 
 </head>
@@ -17,6 +17,11 @@
 <?php include 'include/menunodrop.php';?>
 
 <div id="content">
+
+    <div class="logintext">
+	<h1 style="color:white;">Bsocial. </br>Bringing EAL students together inside and outside school!</h1>
+</div> <!-- end of logintext div -->
+
 <div id="loginbox">
 
   <section class="container">
