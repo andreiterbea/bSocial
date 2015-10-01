@@ -17,13 +17,13 @@
   
 
 		<ul class="cd-primary-nav menucss"><div class="linkstyle">
-			<li><a href="#0">Notifications</a></li>
-			<li><a href="#0">Profile</a></li>
-			<li><a href="#0">Explore Groups</a></li>
+			<li><a href="notifications.php">Notifications</a></li>
+			<li><a href="profile.php">Profile</a></li>
+			<li><a href="explore.php">Explore Groups</a></li>
 			<li><a href="create-group.php">Create group</a></li>
 			<li><a href="create-event.php">Create event</a></li>
-			<li><a href="#0">Calendar</a></li>
-            <li><a href="#0">Settings</a></li>
+			<li><a href="calendar.php">Calendar</a></li>
+            <li><a href="settings.php">Settings</a></li>
 			</br></br>
                   <!-- below is the div for the search bar-->
 		

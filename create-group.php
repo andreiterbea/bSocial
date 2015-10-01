@@ -51,6 +51,6 @@
 
 
 </wrapper>
-<?php include 'include/footer.php';?>
+<?php include_once ("include/footer.php")?>
 </body>
 </html>

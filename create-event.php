@@ -48,10 +48,10 @@
 
 </div><!--loginbox close-->
 </div> <!-- content close -->
-
-
-<?php include 'include/footer.php';?>
-
 </wrapper>
+
+<?php include_once ("include/footer.php")?>
+
+
 </body>
 </html>

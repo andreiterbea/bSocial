@@ -626,11 +626,13 @@ input[type=submit] {
   }
 
 
+
+
 /* FOOTER */ 
 
 
-.outerPageFooter{
-	background-color:#3b3b3b;
+#outerPageFooter{
+	background-color:#1174d9;
 	margin: 0;
 	padding: 0;
 	border: none;
@@ -639,10 +641,11 @@ input[type=submit] {
     width:100%;
     height:60px;
 	alignment-adjust:central;
+	margin-left:-8px;
 }
 
-.pageFooter{
-	background-color:#3b3b3b;
+#pageFooter{
+	background-color:#1174d9;
 	width:960px;
 	alignment-adjust:central;
 	margin:0 auto;
