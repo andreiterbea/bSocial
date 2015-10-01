@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 
 <?php include 'include/headlinks.php';?> <!-- links to css and js -->
-
+<link rel="stylesheet" href="css/groupstyle.css">
 <title>Create a group</title>
 
 </head>
@@ -48,8 +48,9 @@
 </div> <!-- content close -->
 
 
-<?php include 'include/footer.php';?>
+
 
 </wrapper>
+<?php include 'include/footer.php';?>
 </body>
 </html>
