@@ -1,12 +1,9 @@
-<footer>
 <br />
-<div class="outerPageFooter">
-<div class="pageFooter"> 
-<br />
-<a href="http://www.andersbchristensen.com/PehamaStore/admin/public.php" style="color:#FFF;">&copy;Anders B. Christensen</a> 
-<br />
+<div id="outerPageFooter">
+<div id="pageFooter"> 
+<br/>
+<a href="" style="color:#FFF; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;">&copy; Bsocial</a> 
 <br />
 </div>
 </div>
 <br />
-</footer>

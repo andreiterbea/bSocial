@@ -629,7 +629,7 @@ input[type=submit] {
 /* FOOTER */ 
 
 
-.outerPageFooter{
+#outerPageFooter{
 	background-color:#3b3b3b;
 	margin: 0;
 	padding: 0;
@@ -639,9 +639,10 @@ input[type=submit] {
     width:100%;
     height:60px;
 	alignment-adjust:central;
+	margin:-40px;
 }
 
-.pageFooter{
+#pageFooter{
 	background-color:#3b3b3b;
 	width:960px;
 	alignment-adjust:central;
