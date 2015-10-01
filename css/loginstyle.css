@@ -1,0 +1,24 @@
+body	{ background:url(../img/students.jpg) top right no-repeat; background-attachment:fixed; }
+
+.login {
+	box-shadow: 10px 10px 10px rgba(100, 0, 0, 0.2) ;
+}
+
+.logintext {
+	width:600px;
+	height:400px;
+	position:absolute;
+	margin:auto;
+	top:200px;
+	font-size:60px;
+}
+
+
+
+.logintext h1 {
+	font-family:autoradiographicrg;
+	size:50px;
+	color:white;
+	
+	text-shadow:#000;	
+}
