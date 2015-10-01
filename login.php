@@ -2,7 +2,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link href="css/style.css" rel="stylesheet">
+
+<?php include 'include/headlinks.php';?> <!-- links to css and js -->
+<link rel="stylesheet" href="css/loginstyle.css"> 
+
 <title>Login at Bsocial</title>
 </head>
 
@@ -11,15 +14,22 @@
 
 
 <!-- Below is some PHP code that pulls the menu from another file (menu.php) and puts it on this page. This way it's easy to make changes and update every page at once -->
-<?php include 'include/menu.php';?>
+<?php include 'include/menunodrop.php';?>
+
+
 
 <div id="content">
+
+    <div class="logintext">
+	<h1 style="color:white;">Bsocial. </br>Bringing EAL students together inside and outside school!</h1>
+</div> <!-- end of logintext div -->
+
 <div id="loginbox">
 
   <section class="container">
     <div class="login">
       <h1 style="font-family: 'autoradiographicrg'; margin-left: 48px; font-size:33px; color:#349364;"> Login to Bsocial</h1>
-      <form method="post" action="index.html">
+      <form class="loginreg" method="post" action="index.html">
         <p><input type="text" name="login" value="" placeholder="Username"></p>
         <p><input type="password" name="password" value="" placeholder="Password"></p>
         <p class="remember_me">
@@ -29,7 +39,7 @@
         
           </label>
         </p>
-        <p class="submit" style="margin-left: 75px;"><input type="submit" name="commit" value="Login"></p>
+        <p class="submit" style="margin-left: 100px;"><input type="submit" name="commit" value="Login"></p>
       </form>
       <div class="login-help">
       <p> <a href="index.html">Forgot your password?</a>.</p>
@@ -39,17 +49,14 @@
     </div>
     </div>
 
-    
-    
-    
-  </section>
 
 </div><!--loginbox close-->
+
 </div> <!-- content close -->
 
-
-<?php include 'include/footer.php';?>
-
 </wrapper>
+
+<?php include_once ("include/footer.php")?>
+
 </body>
 </html>

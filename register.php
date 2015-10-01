@@ -2,8 +2,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link href="css/style.css" rel="stylesheet">
+
+<?php include 'include/headlinks.php';?> <!-- links to css and js -->
+<link rel="stylesheet" href="css/loginstyle.css"> 
 <title>Register at Bsocial</title>
+
 </head>
 
 <body>
@@ -11,9 +14,14 @@
 
 
 <!-- Below is some PHP code that pulls the menu from another file (menu.php) and puts it on this page. This way it's easy to make changes and update every page at once -->
-<?php include 'include/menu.php';?>
+<?php include 'include/menunodrop.php';?>
 
 <div id="content">
+
+    <div class="logintext">
+	<h1 style="color:white;">Bsocial. </br>Bringing EAL students together inside and outside school!</h1>
+</div> <!-- end of logintext div -->
+
 <div id="loginbox">
 
   <section class="container">
@@ -23,12 +31,12 @@
       
      <p style="color:#000;">Find your class </p>
         <p><select>
-        		<option value="Choose Class">
+        		<option value="chooseClass">
         	</select></p>
             
 	<p style="color:#000;">Find your name </p>
         <p><select>
-        		<option value="Choose Name">
+        		<option value="chooseName">
         	</select></p>
     <p style="color:#000;">Choose a password</p>  
         <p><input type="password" name="password" value="" placeholder="Choose Password"></p>

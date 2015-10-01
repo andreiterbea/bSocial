@@ -1,0 +1,39 @@
+div.sample_attach, a.sample_attach {
+  width: 100px;
+  border: 1px solid #DFAD00;
+  background: #FFFFEE;
+  padding: -20px 5px;
+  font-weight: 900;
+  color: #00009C;
+  text-align: center;
+  outline:none !important;
+  border-radius:5px;
+}
+
+a.sample_attach {
+  display: block;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+form.sample_attach {
+  position: absolute;
+  left:-20px;
+  visibility: hidden;
+  background: #FFFFEE;
+  color: #00009C;
+  text-align: center;
+}
+
+.src_child {
+	text-align:center;
+	position:relative;
+	left:-20px;
+}
+
+#searchbar {
+	height:40px;
+	width:150px;
+	position:relative;
+	left:-30px;
+}

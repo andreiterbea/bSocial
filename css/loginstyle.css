@@ -1,0 +1,46 @@
+body	{ background:url(../img/students.jpg) top right no-repeat; background-attachment:fixed; }
+
+.login {
+	box-shadow: 10px 10px 10px rgba(100, 0, 0, 0.2) ;
+}
+
+.logintext {
+	width:600px;
+	height:400px;
+	position:absolute;
+	margin:auto;
+	top:200px;
+	font-size:60px;
+}
+
+
+
+.logintext h1 {
+	font-family:autoradiographicrg;
+	size:50px;
+	color:white;
+	
+	text-shadow:#000;	
+}
+
+#outerPageFooter{
+	background-color:#1174d9;
+	margin: 0;
+	padding: 0;
+	border: none;
+	position:fixed;
+    bottom:0;
+    width:100%;
+    height:60px;
+	alignment-adjust:central;
+	margin-left:-8px;
+}
+
+#pageFooter{
+	background-color:#1174d9;
+	width:960px;
+	alignment-adjust:central;
+	margin:0 auto;
+	color:#10997F;
+	bottom:0;
+}
