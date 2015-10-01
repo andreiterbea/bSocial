@@ -4,7 +4,7 @@
 
 <!-- Below is the button that trigers the drop down -->
 <a class="cd-primary-nav-trigger menucss" href="#0">
-			<span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
+		<!--	<span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>-->
 		</a> 
 <!-- this is where the button ends -->
 </header>
@@ -20,7 +20,7 @@
 			<li><a href="#0">Notifications</a></li>
 			<li><a href="#0">Profile</a></li>
 			<li><a href="#0">Explore Groups</a></li>
-			<li><a href="create-group.php">Create group</a></li>
+			<li><a href="#0">Create group</a></li>
 			<li><a href="create-event.php">Create event</a></li>
 			<li><a href="#0">Calendar</a></li>
             <li><a href="#0">Settings</a></li>
