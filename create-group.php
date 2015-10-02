@@ -1,3 +1,6 @@
+<?php require_once('app.php');
+    $um->loggedInElseRedirect();
+?>
 <!doctype html>
 <html>
 <head>
@@ -21,24 +24,19 @@
 
   <section class="container">
     <div class="createevent" style="background-color:#1174d9;">
-      <h1 style="font-family: 'autoradiographicrg'; margin-left: 48px; font-size:300%; color:white;">Create a new Group!</h1>
-      <form method="post" action="index.html">
+      <h1 style="font-family: 'autoradiographicrg'; margin-left: 28px; font-size:300%; color:white;">Create a new Group</h1>
+      <form id="dummy-form">
       
     
             
-    <p style="color:#FFF;">Name your group Group:</p>  
-        <p><input type="text" style="width:400px;" name="groupName" value="" ></p>
+    <p style="color:#FFF;">Name your Group:</p>  
+        <p><input type="text" style="width:400px;" name="group_name" value="" ></p>
         
     <p style="color:#FFF;">Choose a Group Description</p>  
          <p><input type="text" style="width:400px; height:100px;" name="groupDescription" value="" ></p>
     
-     <p style="color:#FFF;">Choose Parent Group</p>
-        <p><select>
-        		<option value="chooseParentGroup">
-        	</select></p>
-          </label>
-        </p>
-        <p class="submit"><input type="submit"  name="createGroup" value="Create Group!"></p>
+     <br>
+        <p class="submit" style="margin-left:-30px;"><input type="submit"  name="createGroup" value="Create Group!"></p>
       </form>
 
     </div>
@@ -51,6 +49,6 @@
 
 
 </wrapper>
-<?php include 'include/footer.php';?>
+<?php include_once ("include/footer.php")?>
 </body>
 </html>

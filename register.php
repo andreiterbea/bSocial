@@ -1,3 +1,4 @@
+<?php require_once('app.php'); ?>
 <!doctype html>
 <html>
 <head>
@@ -14,9 +15,9 @@
 
 
 <!-- Below is some PHP code that pulls the menu from another file (menu.php) and puts it on this page. This way it's easy to make changes and update every page at once -->
-<?php include 'include/menunodrop.php';?>
+<?php include 'include/menu.php';?>
 
-<div id="content">
+<div id="content" style="height:800px;">
 
     <div class="logintext">
 	<h1 style="color:white;">Bsocial. </br>Bringing EAL students together inside and outside school!</h1>
@@ -27,30 +28,23 @@
   <section class="container">
     <div class="login">
       <h1 style="font-family: 'autoradiographicrg'; margin-left: 48px; font-size:33px; color:#349364;">Register</h1>
-      <form method="post" action="index.html">
+      <form method="post" action="" id="register-form">
       
      <p style="color:#000;">Find your class </p>
-        <p><select>
-        		<option value="chooseClass">
-        	</select></p>
+        <p><select id="register-classes-drop">
+            <option value="" disabled selected>Choose Class</option>
+          </select></p>
             
 	<p style="color:#000;">Find your name </p>
-        <p><select>
-        		<option value="chooseName">
-        	</select></p>
+        <p><select id="register-names-drop" disabled>
+            <option value="" disabled selected>Choose Name</option>
+          </select></p>
     <p style="color:#000;">Choose a password</p>  
         <p><input type="password" name="password" value="" placeholder="Choose Password"></p>
         
     <p style="color:#000;">Confirm password</p>  
         <p><input type="password" name="confirm_password" value="" placeholder="Confirm Password"></p>
         
-        <p class="remember_me">
-          <label>
-            <input type="checkbox" name="remember_me" id="remember_me">
-            <p style="color:#000;">Remember me </p>
-        
-          </label>
-        </p>
         <p class="submit" style="margin-left: 75px;"><input type="submit" name="commit" value="Login"></p>
       </form>
       <div class="login-help">
@@ -61,7 +55,7 @@
     </div>
 
     
-    
+    <br><br>
     
   </section>
 
@@ -69,8 +63,9 @@
 </div> <!-- content close -->
 
 
-<?php include 'include/footer.php';?>
+
 
 </wrapper>
+<?php include_once ("include/footer.php")?>
 </body>
 </html>

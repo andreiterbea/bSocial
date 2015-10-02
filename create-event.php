@@ -1,3 +1,6 @@
+<?php require_once('app.php');
+    $um->loggedInElseRedirect();
+?>
 <!doctype html>
 <html>
 <head>
@@ -21,12 +24,20 @@
 
   <section class="container">
     <div class="createevent" style="background-color:#62c090;">
-      <h1 style="font-family: 'autoradiographicrg'; margin-left: 48px; font-size:300%; color:white;">Create an Event!</h1>
+      <h1 style="font-family: 'autoradiographicrg'; margin-left: 48px; font-size:300%; color:white;">Create an Event</h1>
       <form method="post" action="index.html">
       
      <p style="color:#FFF;">First choose the group you want to participate in the Event! </p>
         <p><select>
-        		<option value="chooseGroup">
+        		<option value="">Choose Group</option>
+
+            <?php
+              foreach ($gm->getAll() as $group) {
+
+                echo "<option>".$group['group_name'] . "</option>";
+              }
+                
+            ?>
         	</select></p>
             
     <p style="color:#FFF;">Choose a title for your new Event:</p>  
@@ -48,10 +59,10 @@
 
 </div><!--loginbox close-->
 </div> <!-- content close -->
-
-
-<?php include 'include/footer.php';?>
-
 </wrapper>
+
+<?php include_once ("include/footer.php"); ?>
+
+
 </body>
 </html>

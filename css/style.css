@@ -8,7 +8,7 @@
 }
 
 body {
-	background-color: #f0f6fa;
+	background-color: #e0f3fc;
 	height: 100%;
 }
 
@@ -23,6 +23,10 @@ header {
 }
 
 */
+
+.no-line {
+  text-decoration: none !important;
+}
 
 #logo {
 	height: 150px;
@@ -626,11 +630,17 @@ input[type=submit] {
   }
 
 
+
+
 /* FOOTER */ 
 
 
 #outerPageFooter{
+<<<<<<< HEAD
 	background-color:#3b3b3b;
+=======
+	background-color:#1174d9;
+>>>>>>> Andrei
 	margin: 0;
 	padding: 0;
 	border: none;
@@ -639,14 +649,27 @@ input[type=submit] {
     width:100%;
     height:60px;
 	alignment-adjust:central;
+<<<<<<< HEAD
 	margin:-40px;
 }
 
 #pageFooter{
 	background-color:#3b3b3b;
+=======
+	margin-left:-8px;
+}
+
+#pageFooter{
+	background-color:#1174d9;
+>>>>>>> Andrei
 	width:960px;
 	alignment-adjust:central;
 	margin:0 auto;
 	color:#10997F;
 	bottom:0;
+}
+
+#octobox {
+	width:400px;
+	height:height:500px;	
 }
