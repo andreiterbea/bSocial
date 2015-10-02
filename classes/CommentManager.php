@@ -39,7 +39,7 @@ class CommentManager {
 
 	public function getByGroupId($group_id) {
 		//call db with sql
-		$sql = 'SELECT users.name, comments.* FROM comments INNER JOIN users ON comments.user_id = users.id WHERE group_id = :group_id ORDER BY comment_id desc';
+		$sql = 'SELECT ' . USERS_TABLE_NAME . '.name, ' . COMMENTS_TABLE_NAME . '.* FROM ' . COMMENTS_TABLE_NAME . ' INNER JOIN ' . USERS_TABLE_NAME . ' ON ' . COMMENTS_TABLE_NAME . '.user_id = ' . USERS_TABLE_NAME . '.id WHERE group_id = :group_id ORDER BY comment_id desc';
 		$params = array(':group_id' => $group_id);
 
 		$result = $this->db->query_db($sql, $params)->fetchAll(PDO::FETCH_ASSOC);

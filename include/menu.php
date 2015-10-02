@@ -11,7 +11,7 @@ $userid = $sm->get_user_id();
 			{ ?>
 
 
-<span class='no-line' style="position:absolute; bottom:40px;width:500px;right:-30px; color:white; font-size:14pt;">
+<span class='no-line' style="position:absolute; bottom:40px;width:500px;right:20px; color:white; font-size:14pt;">
 		
 <?php echo "Logged in as:&nbsp;&nbsp; <a href='profile.php' class='no-line' style='color:white;border-bottom:1px solid white;'>" . $um->getById($userid)['name']; ?></a> 
 
@@ -41,6 +41,7 @@ style='color:white;border-bottom:1px solid white;'>Notifications</a>
   
 
 		<ul class="cd-primary-nav menucss"><div class="linkstyle">
+			<li><a href="./">Dashboard</a></li>
 			<li><a href="notifications.php">Notifications</a></li>
 			<li><a href="profile.php">Profile</a></li>
 			<li><a href="explore.php">Explore Groups</a></li>

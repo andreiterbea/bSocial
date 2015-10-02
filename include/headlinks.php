@@ -5,3 +5,5 @@
 <script src="js/modernizr.js"></script> <!-- Modernizr -->
 
 <script type="text/javascript" src="localSearchBox.js"></script> <!-- Search script -->
+
+<meta charset="utf-8">

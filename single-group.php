@@ -112,5 +112,20 @@
 				});
 	    });
 </script>
+<script type="text/javascript">
+	
+	var old = "<?php echo count($nm->getUnreadByUserId($userid)); ?>";
+	var evtSource = new EventSource("ajax/do-count-unread.php");
+	evtSource.onmessage = function(e) {
+
+		if(e.data == old) {
+			
+		} else {
+			location.reload(true);
+		}
+	}
+
+</script>
+
 </body>
 </html>
